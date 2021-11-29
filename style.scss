@@ -1,0 +1,26 @@
+$colorRed:red;
+$colorGreen: lightgreen;
+$fontArial: "Arial";
+
+h1 {
+    color:$colorRed;
+    font-family: $fontArial;
+}
+
+@mixin borderStyle($colour){
+    border:1px solid $colour;
+}
+
+.box{
+    height:200px;
+    background:$colorGreen;
+    color:white;
+    .big-box{
+        height:100px;
+        background-color: lightblue;
+        @include borderStyle(red);
+        &:hover{
+            background-color: lightcyan;
+        }
+    }
+}

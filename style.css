@@ -1,0 +1,21 @@
+h1 {
+  color: red;
+  font-family: "Arial";
+}
+
+.box {
+  height: 200px;
+  background: lightgreen;
+  color: white;
+}
+
+.box .big-box {
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid red;
+}
+
+.box .big-box:hover {
+  background-color: lightcyan;
+}
+/*# sourceMappingURL=style.css.map */
